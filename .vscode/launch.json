@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GetInputFromUser",
+            "request": "launch",
+            "mainClass": "GetInputFromUser",
+            "projectName": "Java_Documentation_699f9717"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IfElseError1",
+            "request": "launch",
+            "mainClass": "IfElseError1",
+            "projectName": "Java_Documentation_699f9717"
+        }
+    ]
+}
