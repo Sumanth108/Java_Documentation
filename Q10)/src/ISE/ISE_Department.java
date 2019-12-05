@@ -6,6 +6,7 @@ import main.Faculty;
 
 public class ISE_Department implements Department {
     Scanner sc;
+
     @Override
     public void read_data(Faculty f) {
         //n faculty details
@@ -15,6 +16,8 @@ public class ISE_Department implements Department {
         try {
             System.out.println("Enter age of employee " + (i + 1));
             f.age = sc.nextInt();
+            if(f.age>58)
+                throw new AgeExeption();
         }catch (AgeExeption e){
             System.out.println(e);
         }
