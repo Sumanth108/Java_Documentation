@@ -11,10 +11,11 @@ public class ISE_Department implements Department {
     public void read_data(Faculty f) {
         //n faculty details
         sc = new Scanner(System.in);
-        System.out.println("Enter name of employee "+ (i+1));
+        System.out.println("Enter name of employee ");
         f.name = sc.nextLine();
+        //FOR EXEPTION HANLING using USER-Defined function
         try {
-            System.out.println("Enter age of employee " + (i + 1));
+            System.out.println("Enter age of employee " );
             f.age = sc.nextInt();
             if(f.age>58)
                 throw new AgeExeption();
