@@ -1,9 +1,9 @@
 public class Segment extends Circle {
     float length;
 
-    Segment(float radius, float lenght){
+    Segment(float radius, float length){
         super(radius);
-        this.length = lenght;
+        this.length = length;
     }
 
     double area_segment(){
