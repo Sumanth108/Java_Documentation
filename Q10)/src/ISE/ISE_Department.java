@@ -5,14 +5,12 @@ import main.Department;
 import main.Faculty;
 
 public class ISE_Department implements Department {
-    Scanner sc;
-
     @Override
     public void read_data(Faculty f) {
         //n faculty details
-        sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter name of employee ");
-        f.name = sc.nextLine();
+        f.name = sc.next();
         //FOR EXEPTION HANLING using USER-Defined function
         try {
             System.out.println("Enter age of employee " );
@@ -22,13 +20,13 @@ public class ISE_Department implements Department {
         }catch (AgeExeption e){
             System.out.println(e);
         }
-        System.out.println("Enter designation of employee "+ (i+1))
+        System.out.println("Enter designation of employee ");
         f.designation = sc.nextLine();
-        System.out.println("Enter  of employee "+ (i+1))
+        System.out.println("Enter  of employee ");
         f.joining_data = sc.nextLine();
-        System.out.println("Enter subjects_handled of employee "+ (i+1))
+        System.out.println("Enter subjects_handled of employee ");
         f.subjects_handled = sc.nextInt();
-        System.out.println("Enter years_of_experience of employee "+ (i+1))
+        System.out.println("Enter years_of_experience of employee ");
         f.years_of_experience = sc.nextInt();
 
 
