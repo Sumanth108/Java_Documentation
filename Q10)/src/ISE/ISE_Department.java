@@ -19,11 +19,12 @@ public class ISE_Department implements Department {
                 throw new AgeExeption();
         }catch (AgeExeption e){
             System.out.println(e);
+            return;
         }
         System.out.println("Enter designation of employee ");
-        f.designation = sc.nextLine();
-        System.out.println("Enter  of employee ");
-        f.joining_data = sc.nextLine();
+        f.designation = sc.next();
+        System.out.println("Enter Joining Data of employee ");
+        f.joining_data = sc.next();
         System.out.println("Enter subjects_handled of employee ");
         f.subjects_handled = sc.nextInt();
         System.out.println("Enter years_of_experience of employee ");

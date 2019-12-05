@@ -13,8 +13,10 @@ public class MainClass {
         Faculty [] f = new Faculty[n];
         //reading data
         for(int i=0;i<n;i++){
+            System.out.println("\n Employee "+ (i+1));
             f[i] = new Faculty();// creating instance
             ise.read_data(f[i]);
+
         }
         //printing data
         for (int i=0;i<n;i++){
