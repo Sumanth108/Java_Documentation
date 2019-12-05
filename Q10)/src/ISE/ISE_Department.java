@@ -10,28 +10,28 @@ public class ISE_Department implements Department {
         //n faculty details
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter name of employee ");
-        f.name = sc.next();
-        //FOR EXEPTION HANLING using USER-Defined function
+    f.name = sc.next();
+    //FOR EXEPTION HANLING using USER-Defined function
         try {
-            System.out.println("Enter age of employee " );
-            f.age = sc.nextInt();
-            if(f.age>58)
-                throw new AgeExeption();
-        }catch (AgeExeption e){
-            System.out.println(e);
-            return;
-        }
-        System.out.println("Enter designation of employee ");
-        f.designation = sc.next();
-        System.out.println("Enter Joining Data of employee ");
-        f.joining_data = sc.next();
-        System.out.println("Enter subjects_handled of employee ");
-        f.subjects_handled = sc.nextInt();
-        System.out.println("Enter years_of_experience of employee ");
-        f.years_of_experience = sc.nextInt();
-
-
+        System.out.println("Enter age of employee " );
+        f.age = sc.nextInt();
+        if(f.age>58)
+            throw new AgeExeption();
+    }catch (AgeExeption e){
+        System.out.println(e);
+        return;
     }
+        System.out.println("Enter designation of employee ");
+    f.designation = sc.next();
+        System.out.println("Enter Joining Data of employee ");
+    f.joining_data = sc.next();
+        System.out.println("Enter subjects_handled of employee ");
+    f.subjects_handled = sc.nextInt();
+        System.out.println("Enter years_of_experience of employee ");
+    f.years_of_experience = sc.nextInt();
+
+
+}
 
     @Override
     public void print_data(Faculty f) {

@@ -22,7 +22,12 @@ public class MainClass {
         for (int i=0;i<n;i++){
             ise.print_data(f[i]);
         }
-
+        // for experience greater than 20yrs
+        for(int i=0;i<n;i++){
+            System.out.println("\n Employee having experience more than 20yrs\n ");
+            if(f[i].years_of_experience>20)
+                ise.print_data(f[i]);
+        }
 
     }
 
