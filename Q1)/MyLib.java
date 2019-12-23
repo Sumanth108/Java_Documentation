@@ -24,10 +24,15 @@ public class MyLib {
 
     public static boolean checkPrime(int n){
         boolean isPrime = true;
-        if(n<=2) {
+        if(n<2)
+        {
             System.out.println("Enter a value greated than 2");
             return false;
         }
+        
+        if(n==2)
+            return true;
+        
         for(int i=2;i<=n/2;i++){
             if(n%i==0){
                 isPrime = false;
